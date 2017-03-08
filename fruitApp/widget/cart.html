@@ -1,0 +1,11 @@
+<div class="item item-thumbnail-left" href="#">
+    <img src="{{item.images.list}}">
+    <h2>{{item.name}}---new</h2>
+    <p>
+       <span ng-click="minus()">-</span>
+       <span>{{item.num}}</span>
+       <span ng-click="plus()">+</span>
+       <span>{{item.price|price}}</span>
+       <span style="color:red">{{item.vip_price|price}}</span>
+    </p>
+</div>

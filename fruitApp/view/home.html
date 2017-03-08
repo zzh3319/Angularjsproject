@@ -1,0 +1,30 @@
+<div class="bar bar-header bar-positive">
+  	<h1 class="title">{{name}}<a href="#address">水果APP</a></h1>
+</div>
+<ion-content class="has-footer has-header">
+	<div class="row">
+	  <div class="col">新春特惠</div>
+	  <div class="col">水果</div>
+	  <div class="col">水果</div>
+	  <div class="col">水果</div> 
+	</div>
+	<ion-slide-box class="slide-wrapper">
+	  <ion-slide>
+	    <div class="box blue"><h1>BLUE</h1></div>
+	  </ion-slide>
+	  <ion-slide>
+	    <div class="box yellow"><h1>YELLOW</h1></div>
+	  </ion-slide>
+	  <ion-slide>
+	    <div class="box pink"><h1>PINK</h1></div>
+	  </ion-slide>
+	</ion-slide-box>
+	<div class="list" id="mylist">
+	    <single-cart ng-repeat="item in homedata" item="item"></single-cart>
+
+	    <!-- 
+	    function singeCart(item, homedata, index){
+	    	item homedata index
+	    } -->
+	</div>
+</ion-content>
